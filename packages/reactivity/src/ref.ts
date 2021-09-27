@@ -99,7 +99,7 @@ class RefImpl<T> {
     this._rawValue = _shallow ? value : toRaw(value)
     this._value = _shallow ? value : toReactive(value)
   }
-
+ 
   get value() {
     trackRefValue(this)
     return this._value
